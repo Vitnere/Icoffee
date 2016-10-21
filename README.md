@@ -2,7 +2,7 @@
 Coffee ordering app
 
 Android Development for Beginners
-How to Make an Android App
+How to Make an Android App<br>
 https://www.udacity.com/course/android-development-for-beginners--ud837
 
 Instructors & Partners
