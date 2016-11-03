@@ -5,7 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import java.text.NumberFormat;/*bug for fix with NumberFormat on line 44. Auto import is on -.-' */
+import java.text.NumberFormat;
 
 /**
  * This app displays an order form to order coffee.
@@ -24,9 +24,30 @@ public class MainActivity extends ActionBarActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int price = (quantity * 1);
-        String priceMessage = "Total price is: " + price + " $\n\n Thank you!";
+        int price = calculatePrice();
+        String priceMessage = Summary(price);
         displayMessage(priceMessage);
+
+    }
+
+    /*
+    * Create summary of the order
+    *
+    * @param price of the order
+    * @return text summary
+    * */
+    private String Summary(int price) {
+        String sum = "Name: Coffe User\n" + "Quantity: " + quantity + "\nTotal: " + price + "$\nThank you!";
+        return sum;
+    }
+
+    /**
+     * Calculates the price of the order.
+     *
+     * @return total price
+     */
+    private int calculatePrice() {
+        return quantity * 1;
     }
 
     /**
@@ -40,7 +61,7 @@ public class MainActivity extends ActionBarActivity {
     /**
      * This method displays the given quantity value on the screen.
      */
-    private void display(int number) {
+    private void displayQuantity(int number) {
         TextView quantityTextView = (TextView) findViewById(
                 R.id.quantity_text_view);
         quantityTextView.setText("" + number);
@@ -59,7 +80,7 @@ public class MainActivity extends ActionBarActivity {
      */
     public void increment(View view) {
         quantity = quantity + 1;
-        display(quantity);
+        displayQuantity(quantity);
     }
 
     /**
@@ -67,6 +88,6 @@ public class MainActivity extends ActionBarActivity {
      */
     public void decrement(View view) {
         quantity = quantity - 1;
-        display(quantity);
+        displayQuantity(quantity);
     }
 }
