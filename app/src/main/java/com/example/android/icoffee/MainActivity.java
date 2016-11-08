@@ -68,10 +68,10 @@ public class MainActivity extends AppCompatActivity {
      * @return total price
      */
     private double calculatePrice(boolean milk, boolean cream) {
-        if (milk == true) {
-            return quantity * 1.20;
-        } else if (cream == true) {
-            return quantity * 1.10;
+        if (milk == true && cream == true) {
+            return quantity * 1 + 0.20;
+        } else if (milk || cream == true ) {
+            return quantity * 1 + 0.10;
         } else {
             return quantity * 1;
         }
