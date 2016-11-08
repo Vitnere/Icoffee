@@ -3,6 +3,7 @@ package com.example.android.icoffee;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 /**
@@ -22,10 +23,18 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int price = calculatePrice();
-        String priceMessage = Summary(price);
-        displayMessage(priceMessage);
+        /*wipped cream*/
+        CheckBox wippedCream = (CheckBox) findViewById(R.id.notify_me_checkbox);/*find checkbox view*/
+        boolean cream = wippedCream.isChecked();/*convert to boolean var named cream*/
+        //Log.v("MainActivity", "The cream is " + cream);/*check output*/
 
+        /*milk*/
+        CheckBox addMilk = (CheckBox) findViewById(R.id.notify_me_checkbox2);
+        boolean milk = addMilk.isChecked();
+
+        int price = calculatePrice();
+        String priceMessage = Summary(price, cream, milk);
+        displayMessage(priceMessage);
     }
 
     /*
@@ -34,8 +43,17 @@ public class MainActivity extends AppCompatActivity {
     * @param price of the order
     * @return text summary
     * */
-    private String Summary(int price) {
-        String sum = "Name: Coffe User\n" + "Quantity: " + quantity + "\nTotal: " + price + "$\nThank you!";
+    private String Summary(int price, boolean cream, boolean milk) {
+        String sum = "Name: Coffe User\n"
+                + "Quantity: "
+                + quantity + "\n"
+                + "Add whipped cream? "
+                + cream + "\n"
+                + "Add milk? "
+                + milk + "\n"
+                + "Total: "
+                + price + "$\n"
+                + "Thank you!";
         return sum;
     }
 
