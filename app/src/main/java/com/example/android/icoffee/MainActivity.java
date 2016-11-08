@@ -32,8 +32,12 @@ public class MainActivity extends AppCompatActivity {
         CheckBox addMilk = (CheckBox) findViewById(R.id.notify_me_checkbox2);
         boolean milk = addMilk.isChecked();
 
-        int price = calculatePrice();
-        String priceMessage = Summary(price, cream, milk);
+        /*enter name*/
+        TextView enterName = (TextView) findViewById(R.id.enterName);
+        String name = enterName.getText().toString();
+
+        double price = calculatePrice(milk, cream);
+        String priceMessage = Summary(price, cream, milk, name);
         displayMessage(priceMessage);
     }
 
@@ -43,8 +47,9 @@ public class MainActivity extends AppCompatActivity {
     * @param price of the order
     * @return text summary
     * */
-    private String Summary(int price, boolean cream, boolean milk) {
-        String sum = "Name: Coffe User\n"
+    private String Summary(double price, boolean cream, boolean milk, String name) {
+        String sum = "Name: "
+                + name + "\n"
                 + "Quantity: "
                 + quantity + "\n"
                 + "Add whipped cream? "
@@ -62,8 +67,14 @@ public class MainActivity extends AppCompatActivity {
      *
      * @return total price
      */
-    private int calculatePrice() {
-        return quantity * 1;
+    private double calculatePrice(boolean milk, boolean cream) {
+        if (milk == true) {
+            return quantity * 1.20;
+        } else if (cream == true) {
+            return quantity * 1.10;
+        } else {
+            return quantity * 1;
+        }
     }
 
     /**

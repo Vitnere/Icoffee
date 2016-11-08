@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
     <LinearLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
@@ -12,6 +14,13 @@
         android:orientation="vertical"
         android:padding="16dp"
         tools:context="com.example.android.icoffee.MainActivity">
+
+        <EditText
+            android:id="@+id/enterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textMultiLine" />
 
         <TextView
             android:id="@+id/title_text_view"
