@@ -1,9 +1,9 @@
 # Icoffee
 Coffee ordering app
 
-Instructors & Partners
+Instructors & Partners:
 Katherine Kuan,
 Kunal Chawla,
-Lyla Fujiwara
+Lyla Fujiwara.
 
 <img src="http://i.imgur.com/xlTlxOC.png"/>
