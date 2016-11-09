@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Icoffee</string>
+    <!-- Enter name [CHAR LIMIT=20]-->
+    <string name="Name">Name</string>
+    <!-- Header with toppings [CHAR LIMIT=20]-->
+    <string name="Toppings">Toppings</string>
+    <!-- First option toppings [CHAR LIMIT=20]-->
+    <string name="Whipped_Cream">Whipped Cream</string>
+    <!-- Second option toppings [CHAR-LIMIT=20]-->
+    <string name="Milk">Milk</string>
+    <!-- Quantity [CHAR-LIMIT=20]-->
+    <string name="Quantity">Quantity</string>
+    <!-- Order display [CHAR-LIMIT=20]-->
+    <string name="Order_summary">Order summary!</string>
+    <!-- Order btn label [CHAR-LIMIT=NONE]-->
+    <string name="Order">Order</string>
+    <!--name report-->
+    <string name="name">Name: </string>
+    <!-- Quantity report-->
+    <string name="quantity">Quantity: </string>
+    <!-- cream topping report-->
+    <string name="cream">"Add whipped cream?  "</string>
+    <!-- milk topping report-->
+    <string name="milk">"Add milk?  "</string>
+    <!-- Total price [CHAR-LIMIT=20]-->
+    <string name="total">Total: </string>
+    <!-- Thank you [CHAR-LIMIT=20]-->
+    <string name="thank_you">Thank you!</string>
+    <string name="toast_max">Maximum is 100 coffees!</string>
+    <string name="toast_min">Minimum is 1 coffee!</string>
 </resources>

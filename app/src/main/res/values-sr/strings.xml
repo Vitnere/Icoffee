@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iCoffee</string>
+    <string name="Milk">Mlijeko</string>
+    <string name="Name">Ime</string>
+    <string name="Order">Naruci</string>
+    <string name="Order_summary">Prikaz narudzbe!</string>
+    <string name="Quantity">Kolicina</string>
+    <string name="Toppings">Dodaci</string>
+    <string name="Whipped_Cream">Slag</string>
+    <string name="cream">Dodati slag?</string>
+    <string name="milk">Dodati mlijeko?</string>
+    <string name="name">"Ime: "</string>
+    <string name="quantity">"Kolicina: "</string>
+    <string name="thank_you">Hvala!</string>
+    <string name="total">"Ukupno: "</string>
+    <string name="toast_max">Maksimum je 100 kafa!</string>
+    <string name="toast_min">Minimum je 1 kafa!</string>
+</resources>

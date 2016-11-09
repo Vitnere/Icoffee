@@ -65,20 +65,21 @@ public class MainActivity extends AppCompatActivity {
     private String Summary(double price, boolean cream, boolean milk, String name) {
        /*if(cream) {
             String creamx = Boolean.toString(cream);
+            creamx = "yes";
+           return creamx;
+        }*///convert boolen to string and print yes*/
 
-        }//convert boolen to string and print yes*/
-
-        String sum = "Name: "
+        String sum = getString(R.string.name)
                 + name + "\n"
-                + "Quantity: "
+                + getString(R.string.quantity)
                 + quantity + "\n"
-                + "Add whipped cream? "
+                + getString(R.string.cream)
                 + cream + "\n"
-                + "Add milk? "
+                + getString(R.string.milk)
                 + milk + "\n"
-                + "Total: "
+                + getString(R.string.total)
                 + price + "$\n"
-                + "Thank you!";
+                + getString(R.string.thank_you);
         return sum;
     }
 
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             displayQuantity(quantity);
         } else {
             Context context = getApplicationContext();
-            CharSequence text = "Maximum is 100 coffees";
+            CharSequence text = getString(R.string.toast_max);
             int duration = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(context, text, duration);
@@ -140,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
             displayQuantity(quantity);
         } else {
             Context context = getApplicationContext();
-            CharSequence text = "Minimum is 1 coffee!";
+            CharSequence text = getString(R.string.toast_min);
             int duration = Toast.LENGTH_SHORT;
 
             Toast toast = Toast.makeText(context, text, duration);
