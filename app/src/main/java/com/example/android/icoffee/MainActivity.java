@@ -1,6 +1,7 @@
 package com.example.android.icoffee;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         /*wipped cream*/
         CheckBox wippedCream = (CheckBox) findViewById(R.id.notify_me_checkbox);/*find checkbox view*/
         boolean cream = wippedCream.isChecked();/*convert to boolean var named cream*/
-        //Log.v("MainActivity", "The cream is " + cream);/*check output*/
+        //Log.v("MainActivity", "The cream is " + cream);*//*check output*//*
 
         /*milk*/
         CheckBox addMilk = (CheckBox) findViewById(R.id.notify_me_checkbox2);
@@ -40,7 +41,19 @@ public class MainActivity extends AppCompatActivity {
 
         double price = calculatePrice(milk, cream);
         String priceMessage = Summary(price, cream, milk, name);
-        displayMessage(priceMessage);
+
+        /*
+        * share order
+        *
+        tested on google inbox, gmail, viber,
+         samsung stack sms app, google keep,
+         facebook litle, hangouts, google translate*/
+        Intent intent2 = new Intent();
+        intent2.setAction(Intent.ACTION_SEND);
+        intent2.setType("text/plain");
+        intent2.putExtra(Intent.EXTRA_SUBJECT, "Coffee order");
+        intent2.putExtra(Intent.EXTRA_TEXT, priceMessage);
+        startActivity(Intent.createChooser(intent2, "Share via"));
     }
 
     /*
