@@ -1,15 +1,17 @@
 # Icoffee
-Coffee ordering app
+<b>Coffee ordering app - Get your coffee simple and fast</b>
 
-<b>Short info<b/><br /><br />  
+<b>Short info:<b/><br /><br />  
 <img src="http://i.imgur.com/NzaGda9.png"/><br /><br />  
 Need coffee urgently?<br /> 
 Then this app is just for you.<br /> 
 With it you can:<br /> 
-- Order plain coffee, with milk/ whipped cream,<br /> 
+- Order plain coffee, with milk and/or whipped cream,<br /> 
 - Enter your name,<br /> 
 - Enter quantity of coffee cups you need,<br /> 
 - Then you can share and send your order with your favourite app (Sms, Viber, email, Hangouts etc.)<br /> 
+- Simple and fast UI<br /> 
+- Supported languages: english, german and serbian.<br /> 
 
 <b>How to install:</b><br /> 
 1. Download APK from<br /> 
