@@ -16,6 +16,14 @@
     <string name="Order">Order</string>
     <!--name report-->
     <string name="name">Name: </string>
+    <!--btn minus-->
+    <string name="btnMinus">-</string>
+    <!--btn plus-->
+    <string name="btnPlus">+</string>
+    <!-- basic quantity-->
+    <string name="bQuantity">1</string>
+    <!--orderSummaryValue-->
+    <string name="orderSummaryValue">0</string>
     <!-- Quantity report-->
     <string name="quantity">Quantity: </string>
     <!-- cream topping report-->
