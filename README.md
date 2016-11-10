@@ -1,9 +1,9 @@
 # Icoffee
 Coffee ordering app
 
-<b>Short info<b/><br /> 
-<img src="http://i.imgur.com/NzaGda9.png"/>
-Emergency need coffee?<br /> 
+<b>Short info<b/><br /><br />  
+<img src="http://i.imgur.com/NzaGda9.png"/><br /> 
+Need coffee urgently?<br /> 
 Then this app is just for you.<br /> 
 With it you can:<br /> 
 - Order plain coffee, with milk/ whipped cream,<br /> 
