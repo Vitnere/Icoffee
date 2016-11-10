@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 
 
-
     <LinearLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
@@ -17,44 +16,28 @@
 
         <EditText
             android:id="@+id/enterName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/Name"
-            android:inputType="textMultiLine" />
+            style="@style/EnterName"
+            android:hint="@string/Name" />
 
         <TextView
             android:id="@+id/title_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/Toppings"
-            android:textAllCaps="true" />
+            style="@style/HeaderTextStyle"
+            android:text="@string/Toppings" />
 
         <CheckBox
             android:id="@+id/notify_me_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
-            android:paddingLeft="24dp"
+            style="@style/Checkbox"
             android:paddingTop="16dp"
-            android:text="@string/Whipped_Cream"
-            android:textSize="16sp" />
+            android:text="@string/Whipped_Cream" />
 
         <CheckBox
             android:id="@+id/notify_me_checkbox2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
-            android:paddingLeft="24dp"
-            android:text="@string/Milk"
-            android:textSize="16sp" />
+            style="@style/Checkbox"
+            android:text="@string/Milk" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/Quantity"
-            android:textAllCaps="true" />
+            style="@style/HeaderTextStyle"
+            android:text="@string/Quantity" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,12 +52,9 @@
 
             <TextView
                 android:id="@+id/quantity_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                style="@style/QuantityTextView"
                 android:text="1"
-                android:textColor="@android:color/black"
-                android:textSize="28sp" />
+                android:textColor="@android:color/black" />
 
             <Button
                 android:layout_width="48dp"
@@ -82,16 +62,12 @@
                 android:onClick="increment"
                 android:text="+" />
 
-
         </LinearLayout>
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/Order_summary"
-            android:textAllCaps="true" />
+            style="@style/HeaderTextStyle"
+            android:text="@string/Order_summary" />
 
         <TextView
             android:id="@+id/order_summary_text_view"
