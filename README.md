@@ -1,7 +1,7 @@
 # Icoffee
 <b>Coffee ordering app - Get your coffee simple and fast</b>
 
-<b>Short info:<b/><br /><br />  
+<b>Short info:<b/><br />
 <img src="http://i.imgur.com/NzaGda9.png"/><br /><br />  
 Need coffee urgently?<br /> 
 Then this app is just for you.<br /> 
