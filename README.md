@@ -2,7 +2,7 @@
 Coffee ordering app
 
 <b>Short info<b/><br /><br />  
-<img src="http://i.imgur.com/NzaGda9.png"/><br /> 
+<img src="http://i.imgur.com/NzaGda9.png"/><br /><br />  
 Need coffee urgently?<br /> 
 Then this app is just for you.<br /> 
 With it you can:<br /> 
@@ -14,7 +14,7 @@ With it you can:<br />
 <b>How to install:</b><br /> 
 1. Download APK from<br /> 
 2. Install Icoffee<br /> 
-3. If you have problems with installation just go to Settings->Security, and there check option &#34;Unknown sources&#34;. With this option enabled, you can install apps outside the Google Play.<br /> 
+3. If you have problems with installation just go to Settings->Security, and there check option &#34;Unknown sources&#34;. With this option enabled, you can install apps outside the Google Play.<br /><br />  
 <img src="http://i.imgur.com/oI4JVZD.png"/> 
 
 
